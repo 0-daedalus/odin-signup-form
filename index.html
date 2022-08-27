@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Sign-up form</title>
 </head>
 <body>
-    <div class="cotainer">
-        
+    <div class="container">
+        <div class="left-side">
+            <div class="logo"></div>
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam atque, nostrum commodi magnam natus tempore nisi ullam, fugit obcaecati reiciendis repellendus explicabo numquam soluta amet nihil! Accusamus rerum placeat laudantium.</p>
+                    <p>You know you <em>want</em> this.</p>
+                </div>
+                <div class="signup-form">
+                    <form action="" method="post">
+                        <h1>Let's do this!</h1>
+                        <div class="form-fields">
+                            <div class="left">
+                                <label for="first-name">First name:</label>
+                                <input type="text" name="firstName" id="first-name">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email">
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <div class="right">
+                                <label for="last-name">Last name:</label>
+                                <input type="text" name="lasNname" id="last-name">
+                                <label for="phone">Phone number:</label>
+                                <input type="tel" name="phoneNumber" id="phone">
+                                <label for="repeat-password">Repeat password:</label>
+                                <input type="password" name="repeatPassword" id="repeat-password">
+                            </div>
+                        </div>
+                        <div class="form-submit"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

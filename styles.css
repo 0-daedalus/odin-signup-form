@@ -1,5 +1,44 @@
+label{
+    text-transform: uppercase;
+    display: block;
+}
+input{
+    display:block;
+}
+
+body{
+    box-sizing: border-box;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side{
+    flex: 2;
+    background-color: green;
+}
+
+.right-side{
+    flex: 3;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-fields{
+    display:flex;
+    gap: 4rem;
 }
