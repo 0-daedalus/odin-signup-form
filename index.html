@@ -21,26 +21,42 @@
                 </div>
                 <div class="signup-form">
                     <form action="" method="post">
-                        <h1>Let's do this!</h1>
                         <div class="form-fields">
-                            <div class="left">
-                                <label for="first-name">First name:</label>
-                                <input type="text" name="firstName" id="first-name">
-                                <label for="email">E-mail:</label>
-                                <input type="email" name="email" id="email">
-                                <label for="password">Password:</label>
-                                <input type="password" name="password" id="password">
-                            </div>
-                            <div class="right">
-                                <label for="last-name">Last name:</label>
-                                <input type="text" name="lasNname" id="last-name">
-                                <label for="phone">Phone number:</label>
-                                <input type="tel" name="phoneNumber" id="phone">
-                                <label for="repeat-password">Repeat password:</label>
-                                <input type="password" name="repeatPassword" id="repeat-password">
+                            <h2>Let's do this!</h2>
+                            <div class="form-inputs">
+                                <div class="left">
+                                    <div class="input">
+                                        <label for="first-name">First name*:</label>
+                                        <input type="text" name="firstName" id="first-name" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="email">E-mail*:</label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="password">Password*:</label>
+                                        <input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="input">
+                                        <label for="last-name">Last name*:</label>
+                                        <input type="text" name="lasNname" id="last-name" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="phone">Phone number*:</label>
+                                        <input type="tel" name="phoneNumber" id="phone" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="repeat-password">Repeat password*:</label>
+                                        <input type="password" name="repeatPassword" id="repeat-password" required>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-submit"></div>
+                        <div class="form-submit">
+                            <button type="submit">Create account</button>
+                        </div>
                     </form>
                 </div>
             </div>

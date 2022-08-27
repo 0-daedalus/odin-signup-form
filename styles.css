@@ -10,6 +10,11 @@ body{
     box-sizing: border-box;
 }
 
+button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -28,8 +33,7 @@ body{
     background-color: azure;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+    justify-content: space-around;
 }
 
 .form-container{
@@ -38,7 +42,50 @@ body{
     gap: 1.5rem;
 }
 
+.text-container{
+    line-height: 1.9rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-container, form>*{
+    padding-left: 2rem;
+}
+
 .form-fields{
     display:flex;
-    gap: 4rem;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.349);
+}
+
+.form-inputs{
+    display: flex;
+    gap: 5rem;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.left label, .right label{
+    font-size: 0.8rem;
+    color: rgb(37, 37, 37);
+}
+
+.form-submit{
+    margin-top: 2rem;
+}
+.form-submit button{
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    border-color: green;
+    background-color: green;
+    color: white;
 }
