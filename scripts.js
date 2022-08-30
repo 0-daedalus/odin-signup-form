@@ -36,12 +36,16 @@ submitBtn.addEventListener("click", () => {
     if (password.value != repeatPwd.value) {
         isValidForm = false;
         password.parentNode.querySelector(".errorMsg").textContent = "Passwords must match!";
+        password.style = "outline: none; border: 1px solid red; position: relative;";
         showErrorMsg(password);
         repeatPwd.parentNode.querySelector(".errorMsg").textContent = "Passwords must match!";
+        repeatPwd.style = "outline: none; border: 1px solid red; position: relative;";
         showErrorMsg(repeatPwd);
     }
     else{
         isValidForm = true;
+        password.style = "border: 2px solid green;";
+        repeatPwd.style = "border: 2px solid green;";
         hideErrorMsg(password);
         hideErrorMsg(repeatPwd);
     }
