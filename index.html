@@ -26,7 +26,7 @@
                     <p>You know you <em>want</em> this.</p>
                 </div>
                 <div class="signup-form">
-                    <form action="" method="post">
+                    <form action="" method="post" onsubmit="return isValidForm">
                         <div class="form-fields">
                             <h2>Let's do this!</h2>
                             <div class="form-inputs">
@@ -58,23 +58,23 @@
                                     <div class="input">
                                         <label for="last-name">Last name*:</label>
                                         <input type="text" name="lastName" id="last-name" placeholder="Shikolai" minlength="2" maxlength="15" required>
-                                        <span class="errorMsg" hidden><img class="errorImg" src="./images/alert-triangle.svg" alt="error sign"> Please, enter a valid first name</span>
+                                        <span class="errorMsg" hidden><img class="errorImg" src="./images/alert-triangle.svg" alt="error sign"> Please, enter a valid surname</span>
                                     </div>
                                     <div class="input">
                                         <label for="phone">Phone number*:</label>
                                         <input type="tel" name="phoneNumber" id="phone" placeholder="1-100-1234-1234" required>
-                                        <span class="errorMsg" hidden><img class="errorImg" src="./images/alert-triangle.svg" alt="error sign"> Please, enter a valid first name</span>
+                                        <span class="errorMsg" hidden><img class="errorImg" src="./images/alert-triangle.svg" alt="error sign"> Please, enter a valid phone</span>
                                     </div>
                                     <div class="input" id="repeat-password">
                                         <label for="repeatPwd">Repeat password*:</label>
                                         <input type="password" name="repeatPassword" id="repeatPwd" placeholder="Passwords must match!" required>
-                                        <span class="errorMsg" hidden><img class="errorImg" src="./images/alert-triangle.svg" alt="error sign"> Please, enter a valid first name</span>
+                                        <span class="errorMsg" hidden><img class="errorImg" src="./images/alert-triangle.svg" alt="error sign">A</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-submit">
-                            <button type="submit">Create account</button>
+                            <button type="submit" id="submit">Create account</button>
                             <p>Already have an account? <a href="#">Log-in</a></p>
                         </div>
                     </form>

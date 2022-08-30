@@ -15,3 +15,23 @@ inputs.forEach(element => {
         });
     })
 });
+
+let isValidForm = false;
+let password = document.querySelector("#pwd");
+let repeatPwd = document.querySelector("#repeatPwd");
+let submitBtn = document.querySelector("#submit");
+
+submitBtn.addEventListener("click", () => {
+    if (password.value != repeatPwd.value) {
+        isValidForm = false;
+        password.parentNode.querySelector(".errorMsg").textContent = "Passwords must match!";
+        password.parentNode.querySelector(".errorMsg").hidden = false;
+        repeatPwd.parentNode.querySelector(".errorMsg").textContent = "Passwords must match!";
+        repeatPwd.parentNode.querySelector(".errorMsg").hidden = false;
+    }
+    else{
+        isValidForm = true;
+        password.parentNode.querySelector(".errorMsg").hidden = true;
+        password.parentNode.querySelector(".errorMsg").hidden = true;
+    }
+})
