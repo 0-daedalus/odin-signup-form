@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
     <title>Sign-up form</title>
 </head>
 <body>
@@ -39,28 +40,29 @@
                                         <input type="email" name="email" id="email" placeholder="example@email.com" required>
                                     </div>
                                     <div class="input" id="password">
-                                        <label for="password">Password*:</label>
-                                        <input type="password" name="password" id="password" placeholder="Passwords must match!" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                                        <label for="pwd">Password*:</label>
+                                        <input type="password" name="password" id="pwd" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                                     </div>
                                 </div>
                                 <div class="right">
                                     <div class="input">
                                         <label for="last-name">Last name*:</label>
-                                        <input type="text" name="lastNname" id="last-name" placeholder="Shikolai" minlength="2" maxlength="15" required>
+                                        <input type="text" name="lastName" id="last-name" placeholder="Shikolai" minlength="2" maxlength="15" required>
                                     </div>
                                     <div class="input">
                                         <label for="phone">Phone number*:</label>
                                         <input type="tel" name="phoneNumber" id="phone" placeholder="1-100-1234-1234" required>
                                     </div>
                                     <div class="input" id="repeat-password">
-                                        <label for="repeat-password">Repeat password*:</label>
-                                        <input type="password" name="repeatPassword" id="repeat-password" placeholder="Passwords must match!" required>
+                                        <label for="repeatPwd">Repeat password*:</label>
+                                        <input type="password" name="repeatPassword" id="repeatPwd" placeholder="Passwords must match!" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-submit">
                             <button type="submit">Create account</button>
+                            <p>Already have an account? <a href="#">Log-in</a></p>
                         </div>
                     </form>
                 </div>
