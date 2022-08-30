@@ -35,15 +35,6 @@ input:not(:placeholder-shown):invalid{
     position: relative;
 }
 
-/*input:not(:placeholder-shown):invalid::after{
-    content: url('./images/alert-triangle.svg');
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    right: 0;
-}
-*/
-
 input:placeholder-shown:focus{
     outline: none;
     border: 1px solid rgb(67, 67, 255);
@@ -182,4 +173,16 @@ input:placeholder-shown:focus{
 }
 .form-submit a:hover{
     text-shadow: 0px 0px 1px green;
+}
+
+.errorMsg{
+    color: red; font-size: 0.8rem; padding-top: 5px;
+}
+.errorMsg ul, .errorMsg li{
+    margin: 0;
+}
+
+.errorImg{
+    filter: invert(16%) sepia(59%) saturate(4761%) hue-rotate(352deg) brightness(110%) contrast(129%);;
+    width: 1rem; height: 1rem; position: relative; top: 3px;
 }
